@@ -20,3 +20,9 @@ gsap.fromTo(
   { y: "0%", opacity: 0, duration: 0 },
   { y: "-40%", opacity: 1, duration: 10, repeat: -1 }
 );
+
+gsap.fromTo(
+  ".ghost4",
+  { y: "0%", opacity: 1, duration: 0 },
+  { y: "40%", opacity: 0, duration: 10, repeat: -1 }
+);

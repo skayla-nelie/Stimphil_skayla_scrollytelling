@@ -52,7 +52,10 @@ header div img {
   width: 70px;
 }
 
-/* CHAPTER 1 */
+/* CHAPTER 1 
+-Zoom dans la fenetre de la maison vers la chambre
+-Écriture qui arrive en même temps que le scroll
+*/
 #chapterOne {
   position: relative;
   width: 100vw;
@@ -76,7 +79,10 @@ header div img {
   top: 415px;
 }
 
-/* CHAPTER 2 */
+/* CHAPTER 2 
+-en scrolant le "zzz" apparait
+-la respiration est automatique
+*/
 #chapterTwo {
   position: relative;
   width: 100vw;
@@ -136,7 +142,10 @@ header div img {
   }
 }
 
-/* CHAPTER 3 */
+/* CHAPTER 3 
+-la forme astral de andy apparait en scrollant
+-son corps passe de vivant a mort en scrollant
+*/
 #chapterThree {
   position: relative;
   width: 100vw;
@@ -152,7 +161,7 @@ header div img {
   position: absolute;
   top: 27%;
   left: 23%;
-  background-image: url(../p2.2a/image/);
+  background-image: url(../p2.2a/image/deadly.png);
   background-repeat: no-repeat;
   z-index: 1;
   overflow: hidden;
@@ -251,7 +260,55 @@ header div img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bedroom4 {
+  position: absolute;
+  top: 27%;
+  left: 23%;
+  background-image: url(../p2.2a/image/sprite.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  width: 80vw;
+  aspect-ratio: 1/1;
+  animation-name: marche2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+  background-position: 3300% -20%;
+}
+@keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1920px 0px;
+  }
+}
 
+.ghost4 {
+  position: absolute;
+  top: -5%;
+  left: 23%;
+  background-image: url(../p2.2a/image/shock.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  width: 80vw;
+  aspect-ratio: 1/1;
+  animation-name: marche2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+  background-position: 100% 0%;
+}
+@keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1920px 0px;
+  }
+}
 /* TEST SUR AUTRE PAGE POUR SPRITESHEET
 .index2 {
   height: 30000px;
