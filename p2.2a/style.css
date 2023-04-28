@@ -84,7 +84,7 @@ header div img {
   margin: 0 0 0 0;
   background-image: url(../p2.2a/image/bed.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .zzz {
   position: absolute;
@@ -100,7 +100,7 @@ header div img {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(33);
-  background-position: 100% 3300%;
+  background-size: 100% -3300%;
 }
 
 @keyframes marche {
@@ -125,7 +125,7 @@ header div img {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(2);
-  background-position: 100% 3300%;
+  background-size: 100% -20%;
 }
 @keyframes marche2 {
   from {
@@ -143,39 +143,16 @@ header div img {
   height: 100vh;
   margin: 0 0 0 0;
   background-image: url(../p2.2a/image/bed.svg);
+  background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.zzz2 {
-  position: absolute;
-  top: 5%;
-  left: 15%;
-  background-image: url(../p2.2a/image/zzz.png);
-  background-repeat: no-repeat;
-  z-index: 1;
-  overflow: hidden;
-  width: 50vw;
-  aspect-ratio: 1/1;
-  animation-name: marche;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(33);
-  background-position: 100% 3300%;
-}
 
-@keyframes marche {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 -26400px;
-  }
-}
 .bedroom2 {
   position: absolute;
   top: 27%;
   left: 23%;
-  background-image: url(../p2.2a/image/sprite.png);
+  background-image: url(../p2.2a/image/);
   background-repeat: no-repeat;
   z-index: 1;
   overflow: hidden;
@@ -185,7 +162,7 @@ header div img {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(2);
-  background-position: 100% 3300%;
+  background-position: 3300% -20%;
 }
 @keyframes marche2 {
   from {
@@ -200,7 +177,7 @@ header div img {
   position: absolute;
   top: 27%;
   left: 23%;
-  background-image: url(../p2.2a/image/ghost.svg);
+  background-image: url(../p2.2a/image/shock.png);
   background-repeat: no-repeat;
   z-index: 1;
   overflow: hidden;
@@ -210,7 +187,7 @@ header div img {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(2);
-  background-position: 100% 3300%;
+  background-position: 100% 0%;
 }
 @keyframes marche2 {
   from {
