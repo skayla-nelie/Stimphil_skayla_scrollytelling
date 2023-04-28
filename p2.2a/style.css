@@ -63,20 +63,26 @@ header div img {
   margin: 0 0 0 0;
   background-image: url(../p2.2a/image/forest.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .intro {
-  position: relative;
+  position: absolute;
   top: 10%;
   left: 5%;
   text-align: justify;
   color: #f8f9fa;
   font-size: xx-large;
   font-family: "Pixel";
+  object-position: 50%;
+  object-fit: 100% 100%;
 }
 .house {
   position: absolute;
-  top: 415px;
+  width: 50%;
+  background-size: 100% 100%;
+  top: 300px;
+  object-position: 50%;
+  object-fit: 100% 100%;
 }
 
 /* CHAPTER 2 
@@ -131,7 +137,7 @@ header div img {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(2);
-  background-size: 100% -20%;
+  background-size: 0% -20%;
 }
 @keyframes marche2 {
   from {
@@ -238,14 +244,23 @@ header div img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.tunnel {
+  position: relative;
+  top: 89%;
+  left: 83%;
+  width: 20vw;
+  z-index: 1;
+}
+.tunnel img {
+  width: 130px;
+}
 /* CHAPTER 7 */
 #chapterSeven {
   position: relative;
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(../p2.2a/image/forest.svg);
+  background-image: url(../p2.2a/image/underground.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
