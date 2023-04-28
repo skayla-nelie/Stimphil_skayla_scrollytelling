@@ -25,7 +25,7 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url(../image/night.png);
+  background-image: url(../p2.2a/image/night.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: #f8f9fa;
@@ -56,23 +56,33 @@ header div img {
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(/image/forest.svg);
+  background-image: url(../p2.2a/image/forest.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.house {
+  position: relative;
+  top: 415px;
 }
 #chapterTwo {
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(/image/forest.svg);
+  background-image: url(../p2.2a/image/bed.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bedroom {
+  position: relative;
+  top: 25%;
+  width: 80%;
+}
+
 #chapterThree {
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(/image/forest.svg);
+  background-image: url(../p2.2a/image/forest.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -80,7 +90,7 @@ header div img {
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(/image/forest.svg);
+  background-image: url(../p2.2a/image/forest.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -88,7 +98,7 @@ header div img {
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(/image/forest.svg);
+  background-image: url(../p2.2a/image/forest.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -96,7 +106,7 @@ header div img {
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(/image/forest.svg);
+  background-image: url(../p2.2a/image/forest.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -104,7 +114,7 @@ header div img {
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(/image/forest.svg);
+  background-image: url(../p2.2a/image/forest.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -112,7 +122,7 @@ header div img {
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
-  background-image: url(/image/forest.svg);
+  background-image: url(../p2.2a/image/bed.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -123,17 +133,19 @@ header div img {
 main .spriteSheet {
   position: relative;
   top: -700px;
-  width: 50vw;
-  aspect-ratio: 1/1;
-  z-index: 1;
-  background-image: url(/p2.2a/image/zzz.svg);
-  background-size: 3300% 100%;
+  background-image: url(../p2.2a/image/zzz.png);
   background-repeat: no-repeat;
   background-color: #ff3535;
+  z-index: 1;
+  overflow: hidden;
+  width: 500px;
+  aspect-ratio: 1/1;
   animation-name: marche;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(33);
+  background-position: 100% 3300%;
+  animation-play-state: paused;
 }
 
 @keyframes marche {
@@ -141,6 +153,33 @@ main .spriteSheet {
     background-position: 0 0;
   }
   to {
-    background-position: 0 -8580px;
+    background-position: 0 -26400px;
+  }
+}
+
+main .spriteSheet2 {
+  position: relative;
+  top: -700px;
+  background-image: url(../p2.2a/image/zzz.png);
+  background-repeat: no-repeat;
+  background-color: #ff3535;
+  z-index: 1;
+  overflow: hidden;
+  width: 500px;
+  aspect-ratio: 1/1;
+  animation-name: marche;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(33);
+  background-position: 100% 3300%;
+  animation-play-state: paused;
+}
+
+@keyframes marche {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -26400px;
   }
 }
