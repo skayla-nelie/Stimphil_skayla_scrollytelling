@@ -1,6 +1,7 @@
 # Stimphil_skayla_scrollytelling
 # Projet scrolytelling: Terreur nocturne
-## Projet scolaire dans le cadre du cours: Optimisation Web - Projeet scrollytelling 
+## Projet scolaire dans le cadre du cours: 
+Optimisation Web - Projet scrollytelling 
 ## Conception
 - Skayla-Nélie Stimphil Labranche
 - Gabriel Clerval
