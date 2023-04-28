@@ -1,0 +1,146 @@
+:root {
+  --title: #ff3535;
+  --btn-secondar: #ffffff;
+  --btn-seconda: #f8f9fa;
+  --btn-second: #6c757d;
+  --btn-secon: #495057;
+  --background: #343a40;
+  --backgroundOne: #000000;
+}
+
+@font-face {
+  src: url("../font/DePixelBreit.ttf") format("truetype");
+  font-family: "Pixel";
+}
+
+body {
+  font-family: "Pixel";
+  overflow-x: hidden;
+}
+
+.scroll {
+  transform: rotate(270deg);
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../image/night.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #f8f9fa;
+  text-align: center;
+}
+header h1 {
+  position: relative;
+  top: 15%;
+  color: var(--title);
+}
+header p {
+  position: relative;
+  top: 88%;
+  font-size: 11px;
+}
+header div {
+  position: relative;
+  top: 55%;
+  font-size: 30px;
+  color: var(--title);
+}
+
+header div img {
+  width: 70px;
+}
+
+#chapterOne {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background-image: url(/image/forest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#chapterTwo {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background-image: url(/image/forest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#chapterThree {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background-image: url(/image/forest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#chapterFour {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background-image: url(/image/forest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#chapterFive {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background-image: url(/image/forest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#chapterSix {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background-image: url(/image/forest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#chapterSeven {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background-image: url(/image/forest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#chapterEigth {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background-image: url(/image/forest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.index2 {
+  height: 30000px;
+}
+
+main .spriteSheet {
+  position: relative;
+  top: -700px;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  z-index: 1;
+  background-image: url(/p2.2a/image/zzz.svg);
+  background-size: 3300% 100%;
+  background-repeat: no-repeat;
+  background-color: #ff3535;
+  animation-name: marche;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(33);
+}
+
+@keyframes marche {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -8580px;
+  }
+}
