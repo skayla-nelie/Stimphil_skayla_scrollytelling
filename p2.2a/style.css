@@ -160,7 +160,7 @@ main .spriteSheet {
 main .spriteSheet2 {
   position: relative;
   top: -700px;
-  background-image: url(../p2.2a/image/zzz.png);
+  background-image: url(../p2.2a/image/spritesheet\\(1\).png);
   background-repeat: no-repeat;
   background-color: #ff3535;
   z-index: 1;
