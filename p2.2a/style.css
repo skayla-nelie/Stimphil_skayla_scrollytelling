@@ -355,6 +355,10 @@ body.is-scrolling .ghost5 img {
 body.is-scrolling .monster img {
   animation-play-state: running;
 }
+
+#hippo {
+  visibility: hidden;
+}
 /* CHAPTER 6 */
 #chapterSix {
   background: url(../p2.2a/image/forest.svg) no-repeat 0 0;
@@ -419,45 +423,19 @@ body.is-scrolling .monster img {
   overflow: hidden;
   width: 50vw;
   aspect-ratio: 1/1;
-  animation-name: marche2;
+  animation-name: marche3;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(2);
   background-position: 100% 0%;
-}
-@keyframes marche2 {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -1920px 0px;
-  }
-}
-
-/* TEST SUR AUTRE PAGE POUR SPRITESHEET
-.index2 {
-  height: 30000px;
-}
-
-main .spriteSheet {
-  position: relative;
-  top: -700px;
-  background-image: url(../p2.2a/image/zzz.png);
-  background-repeat: no-repeat;
-  background-color: #ff3535;
-  z-index: 1;
-  overflow: hidden;
-  width: 500px;
-  aspect-ratio: 1/1;
-  animation-name: marche;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(33);
-  background-position: 100% 3300%;
   animation-play-state: paused;
 }
 
-@keyframes marche {
+body.is-scrolling .ghost {
+  animation-play-state: running;
+}
+
+@-webkit-keyframes marche3 {
   from {
     background-position: 0 0;
   }
@@ -465,30 +443,26 @@ main .spriteSheet {
     background-position: 0 -26400px;
   }
 }
-
-main .spriteSheet2 {
-  position: relative;
-  top: -700px;
-  background-image: url(../p2.2a/image/sprite.png);
-  background-repeat: no-repeat;
-  background-color: #ff3535;
-  z-index: 1;
-  overflow: hidden;
-  width: 800px;
-  aspect-ratio: 1/1;
-  animation-name: marche2;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(2);
-  background-position: 100% 3300%;
-}
-
-@keyframes marche2 {
+@keyframes marche3 {
   from {
     background-position: 0 0;
   }
   to {
-    background-position: -1920px 0px;
+    background-position: 0 -26400px;
   }
 }
-*/
+.sleepyEnd {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  padding: 25px;
+  text-align: justify;
+  color: #f8f9fa;
+  font-size: xx-large;
+  font-family: "Pixel";
+  background-size: 100% 100%;
+  aspect-ratio: 1/1;
+  background-position: 0 0;
+  z-index: 2;
+}

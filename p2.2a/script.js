@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 gsap.fromTo(
   ".scrollDown",
@@ -86,12 +87,6 @@ gsap
     { x: "200", y: "-10%", opacity: 1, duration: 10, repeat: 1 }
   );
 
-gsap.fromTo(
-  ".ghost4",
-  { y: "0%", opacity: 1, duration: 0 },
-  { y: "20%", opacity: 0, duration: 10, repeat: -1 }
-);
-
 //chapter4
 gsap.fromTo(
   ".ghost5 img",
@@ -108,7 +103,7 @@ gsap.fromTo(
   }
 );
 
-//chapter4
+//chapter5
 gsap.fromTo(
   ".ghost6 img",
   {
@@ -123,3 +118,34 @@ gsap.fromTo(
     x: "2500",
   }
 );
+
+gsap.to("#circle", {
+  morphSVG: "#hippo",
+});
+document.addEventListener("click", function () {
+  console.log("reset");
+  anim.progress(0).pause();
+  const myTimeout = setTimeout(function () {
+    anim.play();
+  }, 1000);
+});
+
+//chapter8
+gsap
+  .timeline({
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#chapterEigth",
+      pin: true,
+      markers: true,
+      start: "top top",
+      end: "25% top",
+      toggleActions: "play complete reverse reset",
+    },
+  })
+
+  .fromTo(
+    ".ghost4",
+    { x: "850", y: "-20%", opacity: 1, duration: 0 },
+    { x: "0", y: "350", opacity: 0, duration: 50, repeat: 1 }
+  );
