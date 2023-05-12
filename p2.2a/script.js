@@ -119,17 +119,57 @@ gsap.fromTo(
   }
 );
 
-gsap.to("#circle", {
-  morphSVG: "#hippo",
-});
-document.addEventListener("click", function () {
-  console.log("reset");
-  anim.progress(0).pause();
-  const myTimeout = setTimeout(function () {
-    anim.play();
-  }, 1000);
-});
+let circle = document.querySelector("#circle");
 
+let timeline = gsap
+  .timeline({ defaults: { duration: 1 } })
+  .to(circle, { morphSVG: "#monster" }, "+=1");
+
+document.addEventListener("scroll", function () {
+  console.log("reset");
+  timeline.progress(0).pause();
+  timeline.play();
+});
+//chapter 6
+
+gsap
+  .fromTo(
+    ".ghost7 img",
+    {
+      x: "0",
+    },
+    {
+      scrollTrigger: {
+        trigger: "#chapterSix",
+        pin: true,
+        scrub: true,
+      },
+      x: "1877.62px",
+    }
+  )
+  .to("ghost7 img", {
+    y: "500px",
+  });
+
+//chapter7
+gsap
+  .timeline({
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#chapterSeven",
+      pin: true,
+      markers: true,
+      start: "top top",
+      end: "25% top",
+      toggleActions: "play complete reverse reset",
+    },
+  })
+
+  .fromTo(
+    ".ghost8",
+    { x: "850", y: "-20%", opacity: 1, duration: 0 },
+    { x: "0", y: "350", opacity: 0, duration: 50, repeat: 1 }
+  );
 //chapter8
 gsap
   .timeline({
