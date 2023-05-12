@@ -9,7 +9,7 @@
     <link
       rel="icon"
       type="image/icon"
-      href="/image/icon_2e93c3654ade70aaa0296f9c708b56d6.ico"
+      href="image/icon_2e93c3654ade70aaa0296f9c708b56d6.ico"
     />
   </head>
   <body>
@@ -28,22 +28,25 @@
         <img src="../p2.2a/image/mouse3.png" />
       </div>
     </header>
-    <main>
+    <main class="storytelling">
 
-      <section id="chapterOne">
+      <section id="chapterOne" class="chapter">
         <p class="intro">Durant une nuit très silencieuse dans une forêt, une maison avait encore ses lumières ouvertes... </p>
-        <img class="house" src="../p2.2a/image/house2.png">
+        <div class="houseBox"></div>
      
       </section>
 
-      <section id="chapterTwo">  
+      <section id="chapterTwo" class="chapter">  
+        <p class="sleepy">Andy dort paisiblement dans sa chambre </p>
+
         <div class="zzz"></div>
       </br>
         <div class="bedroom"></div>
         
         </section>
 
-      <section id="chapterThree">
+      <section id="chapterThree" class="chapter">
+        <p class="sleepy">Soudainement le corps d'andy agit de façon étrange et son esprit sort de son corps </p>
         <div class="zzz2"></div>
       </br>
         <div class="bedroom2"></div>
@@ -51,24 +54,39 @@
       <div class="ghost"></div>
       </section>
 
-      <section id="chapterFour">
-     
+      <section id="chapterFour" class="chapter">
+        <p class="sleepy">Andy sort de chez lui et explore les environs en quête de réponses</p>
+        <div class="ghost5">
+          <img src="image/ghost.svg" alt="ghost">
+        </div>
+      
       </section>
 
-      <section id="chapterFive">
-     
+      <section id="chapterFive" class="chapter">
+        <p class="sleepy">Andy croise un montre bizarre qui veut l'attaquer </p>
+        <div class="ghost6">
+          <img src="image/ghost_scare.svg" alt="ghost">
+        </div>
+
+        <div class="monster">
+          <img src="image/monstreXX.svg" alt="ghost">
+
+        </div>
       </section>
 
-      <section id="chapterSix">
+      <section id="chapterSix" class="chapter">
+        <p class="sleepy">Après avoir échapper au monstre il decide de continer sa marche lorsque... </p>
+
           <div class="tunnel"><img src="../p2.2a/image/tunnel2.png"/></div>
       </section>
 
-      <section id="chapterSeven">
-     
+      <section id="chapterSeven" class="chapter">
+        <p class="sleepy">IL TOMBE DANS UN TUNNEL PROFOND!!!!! </p>
    
       </section>
 
-      <section id="chapterEigth">
+      <section id="chapterEigth" class="chapter">
+        <p class="sleepy">Andy se reveille dans son corps et se rend compte que tout cela était un malheureux rêve... Ou peut-être pas.</p>
         <div class="zzz3"></div>
       </br>
         <div class="bedroom4"></div>
@@ -78,6 +96,10 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="https://assets.codepen.io/16327/GSDevTools3.min.js"></script>
+    <script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
