@@ -1,3 +1,5 @@
+permalink: /index.html
+
 # Stimphil_skayla_scrollytelling
 # Projet scrolytelling: Terreur nocturne
 ## Projet scolaire dans le cadre du cours: 
