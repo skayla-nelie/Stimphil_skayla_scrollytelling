@@ -97,7 +97,7 @@ header div img {
   background-size: 100% 100%;
   aspect-ratio: 1/1;
   background-position: 0 0;
-  background-image: url(image/house2.png);
+  background-image: url(../p2.2a/image/house2.png);
   max-width: 40vw;
   z-index: 1;
 }
