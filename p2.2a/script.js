@@ -43,7 +43,7 @@ gsap
       y: "-200vh",
       scale: 30,
       ease0: "slow (0.3, 0.1, false)",
-      duration: 2,
+      duration: 10,
     }
   );
 
